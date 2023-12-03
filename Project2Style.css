@@ -5,13 +5,11 @@
 	background-color: #0c8a06;
 	color: white;
 	font-size: 36px;
-	border-radius: 21px 21px 21px 21px;
 }
 
 .background{
 	background-color: #efefed;
 	padding: 30px 30px 30px 30px;
-	border-radius: 21px 21px 21px 21px;
 	margin-top: 10px;
 }
 
@@ -133,8 +131,7 @@ h2	{
 footer {
 	position: static;
 	padding: 3;
-	margin: 3;
-	border-radius: 8px 8px 8px 8px;
+	margin: 0;
 	color: #242424;
 	background-color: #d9cda1;
 	min-height: 2%;
