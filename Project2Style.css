@@ -112,8 +112,8 @@ h2	{
 }
 
 .table1 thead tr{
-	background-color: #d9cda1;
-	color: #242424;
+	background-color: #0c8a06;
+	color: #ffffff;
 	text-align: center;
 	border: 1px solid;	
 }
@@ -132,8 +132,8 @@ footer {
 	position: static;
 	padding: 3;
 	margin: 0;
-	color: #242424;
-	background-color: #d9cda1;
+	color: #ffffff;
+	background-color: #0c8a06;
 	min-height: 2%;
 	margin-top: 10px;
 	text-align: center;
