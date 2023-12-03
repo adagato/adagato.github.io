@@ -12,6 +12,7 @@
 	background-color: #242424;
 	padding: 30px 30px 30px 30px;
 	border-radius: 21px 21px 21px 21px;
+	margin-top: 10px;
 }
 
 .TextHeader{
@@ -137,4 +138,5 @@ footer {
 	color: #242424;
 	background-color: #d9cda1;
 	min-height: 2%;
+	margin-top: 10px;
 }
