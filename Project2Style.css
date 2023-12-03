@@ -2,14 +2,14 @@
 .banner{
 	padding: 10px;
 	text-align: center;
-	background-color: #d9cda1;
-	font-size: 40px;
+	background-color: #0c8a06;
+	color: white;
+	font-size: 36px;
 	border-radius: 21px 21px 21px 21px;
-	text-shadow: 1px 1px 2px black;
 }
 
 .background{
-	background-color: #242424;
+	background-color: #efefed;
 	padding: 30px 30px 30px 30px;
 	border-radius: 21px 21px 21px 21px;
 	margin-top: 10px;
@@ -17,12 +17,12 @@
 
 .TextHeader{
 	font-size: 24px;
-	color: #d9cda1;
+	color: #242424;
 }
 
 body{
-	background-color:#111111;
-	color: #FFFFFF;
+	background-color:#242424;
+	color: #242424;
 	font-family: Arial;
 	margin-left: 100px;
 	margin-right: 100px;
@@ -31,7 +31,7 @@ body{
 }
 
 .Note{
-	color: #d9cda1;
+	color: #242424;
 }
 
 .link{
@@ -39,7 +39,7 @@ body{
 }
 
 h2	{
-	color:#d9cda1;
+	color:#242424;
 	font-family: Arial;
 	font-size: 32px;
 }
@@ -109,7 +109,7 @@ h2	{
 	width: 90%;
 	margin: 25px;	
 	padding: 10px;
-	color: #FFFFFF;
+	color: #242424;
 	font-family: Arial;
 }
 
@@ -121,7 +121,7 @@ h2	{
 }
 
 .table1 tr td {
-	border: 1px solid;
+	border: 2px solid;
 	text-align: left;
 	padding: 5px;
 }
@@ -139,4 +139,5 @@ footer {
 	background-color: #d9cda1;
 	min-height: 2%;
 	margin-top: 10px;
+	text-align: center;
 }
