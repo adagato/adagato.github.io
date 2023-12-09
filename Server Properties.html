@@ -1,0 +1,139 @@
+<!doctype=html>
+<head>
+<title=Customization></title>
+<link rel="stylesheet" href="InstructionsStyle.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+
+<div class="banner">
+	<div>
+		<h1>
+		Minecraft Server World
+		</h1>
+	</div>
+</div>
+
+<nav>
+<ol id="navlinks">
+	<li><a href="index.html">Server Setup Guide</a></li>
+	<li><a href="PortForwarding.html">Port Forwarding Tutorial</a></li>
+	<li><a href="Server Properties.html">Server Properties</a></li>	
+	<li><a href="Server Commands.html">Server Commands</a></li>
+	<li><a href="Contact.html">Contact</a></li>	
+</ol>
+</nav>
+
+<div class="background">
+
+<p class="PageHeader"><b>Modifying Your World: Server Properties</b></p>
+
+<body>
+
+
+	<h2>What Are Server Properties?</h2>
+		<p>Server Properties are found in the server.properties folder of your server directory. They allow you to change aspects of your server without needing to be in-game. Some properties deal with the setup, optimization, and customization of the world itself, while others deal with gameplay aspects and have comparable <a class="link" href="Server Commands.html">server commands</a> that can be used while in-game. Below is a list of commonly used server properties, as well as their function.</p>
+
+<table class="table1">
+	<thead>
+		<tr>
+			<th><b>Property</b></th>
+			<th><b>Function</b></th>
+		</tr>
+	</thead>
+		
+	<tr>
+		<td><b>gamemode</b></td>
+		<td>Change to play in creative or survival. Add in the preferred gamemode after the "=".</td>
+	</tr>
+	<tr>
+		<td><b>spawn-protection</b></td>
+		<td>Specifies the radius of blocks around the server's spawnpoint that cannot be broken. Change to 0 to eliminate the spawn-protection entirely.</td>
+	</tr>
+	<tr>
+		<td><b>white-list</b></td>
+		<td>Creates a list of usernames that have exclusive access to the server. Helps protect the server from malicious actors that scan the net for minecraft servers to destroy player creations.</td>	
+	</tr>
+	<tr>
+		<td><b>difficulty</b></td>
+		<td>Changes the difficulty level of the server. Set to peaceful, easy, normal, or hard.</td>	
+	</tr>
+	<tr>
+		<td><b>pvp</b></td>
+		<td>Allows players to deal damage to each other. Set to "true" to enable this setting, or "false" to disable it.</td>		
+	</tr>
+	<tr>
+		<td><b>max-players</b></td>
+		<td>Specifies how many players can be on your server at any one time. Adjust this depending on how much RAM you have dedicated to your server.</td>	
+	</tr>
+	<tr>
+		<td><b>level-seed</b></td>
+		<td>Allows you to insert a seed for a world to generate from if you have a preferred one.</td>	
+	</tr>
+	<tr>
+		<td><b>allow-nether</b></td>
+		<td>Set to "true" to enable the nether dimension and allow nether portals to function, set to "false" to disable these features.</td>	
+	</tr>
+</table>
+
+<hr>
+
+<h2>Server Properties In Action</h2>
+
+<p>Below are examples of some other server properties whose effects on the world can be easily shown in images.</p>
+
+<ul>
+	<h2><li>view-distance</h2>
+		<p>The view-distance property adjusts how far (in chunks) players will be able to see on the server. Chunks are a 16x16 unit of blocks in Minecraft that allow the game to create  This setting can cause performance issues if the server's hardware isn't powerful enough, so it's recommended to keep this set to the default value unless you've dedicated at least 2GB of RAM to your server. See the "Modifying the Start Command" step on the <a class="link" href="Instructions.html">How to Setup a Minecraft Server" page for more information about how to do this.</a></p>
+		
+		<p>Below is an example of the view-distance property set to 10.
+		<img class="image" src="10.png"></img></li>
+
+		<br>
+		<p>And an example of the view-distance property set to 20.
+		<img class="image" src="20.png"></img></li>
+
+	<h2><li>motd</h2>
+		<p>The motd property allows you to set a message that will appear in the server's box in the multiplayer menu. MOTD is an abbreviation for "message of the day" but it doesn't need to be updated daily. Highlighted below is the MOTD that has been set for the guide's test server.</p>
+
+		<img class="image" src="motd.png"></img></li>
+		
+	<h2><li>spawn-monsters</h2>
+		<p>The spawn-monsters property tells the game whether or not to spawn monsters. By using this command, you control monster spawning independently of difficulty level (usually, peaceful difficulty does not spawn monsters, and all other difficulties will).</p>
+		
+		<p>Below shows the game with this setting set to true.
+
+		<img class="image" src="spawntrue.png"></img></li>
+		
+		<br>
+		<p>Here is an example of the property set to false.
+	
+		<img class="image" src="spawnfalse.png"></img></li>
+		
+</ul>
+
+
+
+<p class="TextHeader">
+<b>More Customization Options</b>
+<p>While the server-properties folder allows you to perform powerful optimizations and customizations, some settings can be controlled from the game itself. For more information about server customization, see the <a class="link" href="Server Commands.html">Server Commands</a> page.</p>
+
+
+<p class="TextHeader">
+<b>Other Pages</b>
+</p>
+<p><a class="link" href="index.html">How to Setup a Minecraft Server</a></p>
+<p><a class="link" href="PortForwarding.html">Connecting Worldwide: Port Forwarding</a></p>
+<p><a class="link" href="Server Commands.html">Changing the Game: Server Commands</a></p>
+<p><a class="link" href="Contact.html">Getting in Contact</a></p>
+
+<a href="#top"><button class="btn-1"><b>Back to top</b></button></a>
+
+</body>
+</div>
+
+<footer>
+This is not an offical site of Minecraft, nor is it affiliated with Mojang in any way.
+</footer>
+
+</html>

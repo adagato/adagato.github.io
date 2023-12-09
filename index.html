@@ -1,21 +1,34 @@
 <!doctype=html>
 <head>
 <title=Rentz Project2></title>
+<link rel="stylesheet" href="InstructionsStyle.css">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="Project2Style.css">
 </head>
 
 
 <div class="banner">
 	<div>
 		<h1>
-		How to Setup a Minecraft Server
+		Minecraft Server World
 		</h1>
 	</div>
 </div>
 
+<nav>
+<ol id="navlinks">
+	<li><a href="index.html">Server Setup Guide</a></li>
+	<li><a href="PortForwarding.html">Port Forwarding Tutorial</a></li>
+	<li><a href="Server Properties.html">Server Properties</a></li>	
+	<li><a href="Server Commands.html">Server Commands</a></li>
+	<li><a href="Contact.html">Contact</a></li>	
+</ol>
+</nav>
+
+
 <div class="background">
 <body>
+
+<p class="PageHeader"><b>How to Host a Minecraft Server</b></p>
 
 <p class="TextHeader">
 <b>What Is a Minecraft Server?</b>
@@ -35,12 +48,7 @@ Before you begin, make sure that you have the following items:
 		<li>A computer capable of running Windows 10</li>
 		<li>A router provided by your internet service provider or personally owned (this process will not work on public or university wireless networks)</li>
 		<li>Minecraft Java Edition</li>
-		<li>Java Runtime Environment Version 17.0.6 installed on your computer (A free download can be found <a class="link" href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">here</a>. Note that other versions may work, but this guide uses version 17.0.6).
-		<br>
-		<br>
-		<p class="Note"><b><i>Note: You can check to see if you have Java installed by typing "java -version" into the command prompt.</b></i></p>
-		<img class="image" src="java check.gif"></img></li>		
-		</li>
+		<li>Java Runtime Environment Version 17.0.6 installed on your computer. A free download can be found <a class="link" href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html#:~:text=Java%20SE%20Development%20Kit%2017.0.6">on Oracle's website</a>. Under the Java SE Development Kit 17.0.6 section, click on the links for the Windows x64 Installer (.exe). Note that other versions may work, but this guide uses version 17.0.6)</li>
 	</ul>
 <br>
 
@@ -51,23 +59,23 @@ If you have these items, you're ready to get started!</p>
 <hr>
 
 <ol>
-	<h2><li>Download the server file</h2>
+	<h2><li>Downloading the server file</h2>
 		<p>To download the server file, visit <a class="link" href="https://www.minecraft.net/en-us/download/server">Minecraft's server download page</a> and click "Download minecraft_server.X.XX.X.jar".</p>
 		
 		<img class="image" src="minecraftsite.png"></img></li>
 		
-	<h2><li>Create the server folder</h2></li>
-		<p>Open File Explorer and create a new folder in your C: drive. Name it anything you'd like, but this guide will use the name "Minecraft Server".
+	<h2><li>Creating the server folder</h2></li>
+		<p>Open File Explorer and create a new folder in your C: drive. Name it anything you'd like, but for the purpose of the guide, I'll name mine "Minecraft Server".
 		</p>
 		
 		<img class="image" src="folder creation.gif"></img></li>
 		
-	<h2><li>Move the server file to the new folder</h2>
+	<h2><li>Moving the server file to the new folder</h2>
 		<p>Navigate to wherever your browser's downloads are stored. Then, move the downloaded server.jar file to the new server's folder.</p>
 		
 		<img class="image" src="file movement2.gif"></img></li>
 		
-	<h2><li>Find the server in Command Prompt</h2>
+	<h2><li>Finding the server in Command Prompt</h2>
 		<p>Open Command Prompt by typing "cmd" in the windows start menu. Then, use the following commands to navigate out of the user folder and into your server's folder:
 			<ol>
 				<li>cd..</li>
@@ -77,12 +85,12 @@ If you have these items, you're ready to get started!</p>
 		<br>
 		<img class="image" src="prompt navigation.gif"></img></li>
 		
-	<h2><li>Paste the Start Command</h2>
+	<h2><li>Pasting the Start Command</h2>
 		<p>Next, return to the minecraft website and copy the start command shown on the website. Paste this into your command prompt window.</p>
 		
 		<img class="image" src="command pasting.gif"></img></li>
 		
-	<h2><li>Modify the Start Command</h2>
+	<h2><li>Modifying the Start Command</h2>
 		<p>While the command you pasted forms the backbone of your final start command, a few things need to be edited to make your server run well. Change both "1024" values to "2048". These values tell the computer how much Random Access Memory (RAM) to dedicate to the server while its running. Changing the value from 1024 to 2048 will give your server much more room to run smoothly on your computer without you noticing much of a performance decrease in your everyday computer usage.
 		<br>
 		<br>
@@ -90,154 +98,59 @@ If you have these items, you're ready to get started!</p>
 		</p>
 		<img class="image" src="command modifying.gif"></img></li>
 		
-	<h2><li>Start the Server</h2>
+	<h2><li>Starting the Server</h2>
 		<p>Press enter to start the server. It may take a little bit to finish starting.</p>
 		
 		<img class="image" src="server start.gif"></img></li>
 		
-	<h2><li>Agree to the EULA</h2>
+	<h2><li>Agreeing to the EULA</h2>
 		<p>Notice that it failed to start the server. This is because the EULA must be agreed to. Check the server folder again and notice that a few new folders and files have populated there. Click on "eula.txt" and change "false" to "true". Save and exit the file.</p>
 		
 		<img class="image" src="eula agreement.gif"></img></li>
 		
-	<h2><li>Restart the Server</h2>
+	<h2><li>Restarting the Server</h2>
 		<p>Having agreed to the EULA, return to the command prompt window and re-enter the start command to restart the server.</p>
 		
 		<img class="image" src="server restart.gif"></img></li>
+		
+	<h2><li>Connecting to Your Server Locally</h2>
+		<p>To let friends on your local network (usually meaning within your house) connect to your server, you'll need to find your local IP address. This is the number that your friends will type into Minecraft in order to connect. To find your local IP address, open command prompt. From there, type "ipconfig" (without the quotes) into the window. Several lines of info will appear. Find the line that reads: "IPv4 Address: <i>&lt;string of numbers&gt;</i>". This is what you'll give your friends to let them connect from your local network.
+		
+		<p class="Note"><b><i>Note: Local IP addresses are private information that should not be shared publicly. Make sure you only share this IP with friends and others you trust, as they can present a significant security risk if shared publicly.</b></i></p>
+		
+		<img class="image" src="local IP.png"></img></li>
+
+	<h2><li>Joining Your Server</h2>
+		<p>With your IP found, you're ready to join the server! Open Minecraft and click on the Multiplayer tab. There, click "Add Server." Name your server whatever you'd like (Only you will see this name) and enter your local IP address. Click "Done," find your server in the server list, and click "Join Server." Congrats! You have a working Minecraft server!
+		<br>
+		<br>
+		<video class="video" src="Local Server Join.mp4" controls loop autoplay></video></li>
 	
-	<h2><li>Visit Your Router's Website</h2>
-		<P>In order to allow people outside of your local network to connect to your Minecraft server, you'll need to port forward it. You can do this by visiting your router's website. Check the back of your router for a default gateway (It might look something like 192.168.0.1), and paste it into any browser. If asked for a username and password, check your router for a sticker with that information.</p>
-		
-		<img class="image" src="isp website.gif"></img></li>
-		
-	<h2><li>Create a New Port</h2>
-		<p>While the specific layout of each internet provider's default gateway site may differ, each should have a tab for port forwarding. Once you find it, create a new port. The default port for a Minecraft server is 25565, so that is the port that this guide will be using. Make the port follow TCP and UDP protocols, and set both public and private ports to 25565. When asked to enter your local IP, find it in a new command prompt window by typing "ipconfig". Your local IP address will be listed on the "IPv4 Address" line.</p> 
-		
-		<p class="Note"><b><i>Note: Local IP addresses are private information and are a risk to the security of your network and computer if made public. As such, some obfuscations have been made in the below .gif to hide local addresses on the network.</i></b></p>
-		
-		<img class="image" src="port creation.gif"></img></li>
-		
-	<h2><li>Find Your Public IP Address</h2>
-		<p>With the port forwarded, the next step is to find your public IP address. This address is what you will tell Minecraft to connect to, and will allow you to play on your server. To find your public IP address, type "what is my IP address" into the search engine of your choice. The number that appears will be your IP address.</p>
-		
-		<p class="Note"><b><i>Note: Once you have your public IP, it is STRONGLY urged that you not give it out publicly and advertise with it. Much like local IP's, giving your public IP out publicly is a security risk to your home network (albeit not as severe of a risk). Only give out your IP to people you would like to play with and trust.</i></b></p>
-		
-		<img class="image" src="IP address.gif"></img></li>
-		
-	<h2><li>Connect To Your Server</h2>
-		<p>Now that you have your public IP address, you have everything you need to connect to your server. Start Minecraft and go to the Multiplayer menu. There, click "Add Server". Type in the IP address that was found via the browser search, and click "Done". Then, find the new server in the window and click the play button. See this process in action by viewing the video below. Once you've loaded in, Congratulations! You've successfully created a minecraft server that your friends can join from anywhere, and you've learned some important coding and web skills along the way!</p>
-		
-		<video class="video" src="server.mp4" controls loop autoplay></video></li>
-
-	<h2><li>Server Properties</h2>
-		<p>Below is a list of commonly adjusted properties and their functions in order to help you customize your server to your liking.</p>
-
-<table class="table1">
-	<thead>
-		<tr>
-			<th><b>Property</b></th>
-			<th><b>Function</b></th>
-		</tr>
-	</thead>
-		
-	<tr>
-		<td><b>gamemode</b></td>
-		<td>Change to play in creative or survival. Add in the preferred gamemode after the "=".</td>
-	</tr>
-	<tr>
-		<td><b>spawn-protection</b></td>
-		<td>Specifies the radius of blocks around the server's spawnpoint that cannot be broken. Change to 0 to eliminate the spawn-protection entirely.</td>
-	</tr>
-	<tr>
-		<td><b>difficulty</b></td>
-		<td>Changes the difficulty level of the server. Set to peaceful, easy, normal, or hard.</td>	
-	</tr>
-	<tr>
-		<td><b>pvp</b></td>
-		<td>Allows players to deal damage to each other. Set to "true" to enable this setting, or "false" to disable it.</td>		
-	</tr>
-	<tr>
-		<td><b>max-players</b></td>
-		<td>Specifies how many players can be on your server at any one time. Adjust this depending on how much RAM you have dedicated to your server.</td>	
-	</tr>
-	<tr>
-		<td><b>level-seed</b></td>
-		<td>Allows you to insert a seed for a world to generate from if you have a preferred one.</td>	
-	</tr>
-	<tr>
-		<td><b>motd</b></td>
-		<td>Sets the message that will appear in the Minecraft server browser.</td>	
-	</tr>
-</table>
-
-	<h2><li>Server Commands</h2>
-		<p>Server commands let you adjust the server or change gameplay elements while you are in-game. They can be performed by typing "/" followed by the command and its new setting. Check the table below for a list of commonly-used commands.</p>
-
-<table class="table1">
-	<thead>
-		<tr>
-			<th><b>Command</b></th>
-			<th><b>Function</b></th>
-		</tr>
-	</thead>
-		
-	<tr>
-		<td><b>/gamemode</b></td>
-		<td>Change to play in creative, survival, spectator, or adventure. Press space after typing the command and enter your preferred gamemode.</td>
-	</tr>
-	<tr>
-		<td><b>/op &lt;u&gt;</b></td>
-		<td>Where &lt;u&gt; is a player's username, grants that user host privileges.</td>
-	</tr>
-	<tr>
-		<td><b>/time set</b></td>
-		<td>Changes the time of day on the server. Add a space after the command and type "day" for sunrise, "noon" for noon, "dusk" for sunset, and "night" for night. You can also type a number for more specific times, ranging from 1000-24000.</td>	
-	</tr>
-	<tr>
-		<td><b>/weather</b></td>
-		<td>Changes the weather on the server. Add a space and type "clear" to stop rain, "rain" to start rain, or "storm" to start a storm.</td>		
-	</tr>
-	<tr>
-		<td><b>/gamerule mobGriefing</b></td>
-		<td>Add a space and type "true" to allow mobs like creepers to destroy blocks. Type "false" to disable this ability.</td>	
-	</tr>
-	<tr>
-		<td><b>/tp &lt;u1&gt; &lt;u2&gt;</b></td>
-		<td>Where &lt;u1&gt; &lt;u2&gt; stand in for two usernames, teleports &lt;u1&gt; to &lt;u2&gt;'s location.</td>	
-	</tr>
-</table>
-
-</ol>
-<hr>
 <p class="TextHeader">
-<b>Was this Article Helpful?</b>
-</p>
+<h2>Managing Your Server</h2>
+<p>Now that you have a working Minecraft server, you'll want to learn how to operate, optimize, and modify your server to best suit your needs. For example, the server you have currently only allows people on your local network to join, meaning that the people playing on your server will have to be in the same residence or building as your server is. To expand the server to let friends from around the globe play, you'll need to Port Forward. You can learn more about the process of setting this up on our<a class="link" href="PortForwarding.html"> Connecting Worldwide: Port Forwarding</a> page. 
+<br>
+<br>
+If your server is running from a computer that has decent hardware, you'll be able to boost some of the server properties so that more people can play at once, so that people on your server can see farther, or travel longer distances. On the other hand, if your server is from a weaker computer, you may want to turn some settings down in order to make it perform better. Both of these use cases can be achieved by tweaking values in the server properties folder. For more information on this, view our <a class="link" href="Server Properties.html">Modifying Your World: Server Properties</a> page!
+<br>
+<br>
+If you're in-game and want to change the world's spawn point, teleport yourself to another player, change your gamemode or difficulty, control the weather and time of day, locate your favorite biome, or give any item in the game to yourself or another player, you'll need to know some server commands. Check out our <a class="link" href="Server Commands.html"> Changing the Game: Server Commands<a> page to learn more about these and other commands!
 
-<button class="btn-1">Yes</button>
-<button class="btn-1">No</button>
 <br>
 <br>
 
-<hr>
-<p class="TextHeader">
-<b><a class="link" href="https://help.minecraft.net/hc/en-us">Support Home</a></b>
-</p>
+Lastly, if you've gone through all the guides and still have questions, learn where and how to reach out on the <a class="link" href="Contact.html">Getting in Contact</a> page! The owner of the website will be happy to answer any remaining questions and walk you through any step you're having trouble with. If you would like the owner of the site to set up and host a server for you for $5 a month, leave inquiries at <a class="link" href = "mailto: ajrtp9@umsystem.edu">ajrtp9@umsystem.edu</a>.
 
-<hr>
-<p class="TextHeader">
-<b>Related Articles</b>
-</p>
-<p><a class="link" href="https://help.minecraft.net/hc/en-us/articles/360059148111">Minecraft: Java Edition Hotkeys</a></p>
-<p><a class="link" href="https://help.minecraft.net/hc/en-us/articles/360059146051">Minecraft: Java Edition - Debug Menu</a></p>
-<p><a class="link" href="https://help.minecraft.net/hc/en-us/articles/4409139065613">Mods for Minecraft: Java Edition</a></p>
-<p><a class="link" href="https://help.minecraft.net/hc/en-us/articles/19882462609677">How to Survive your First Night in Minecraft</a></p>
-<p><a class="link" href="https://help.minecraft.net/hc/en-us/sections/12618583497869">View all articles ></a></p>
+<br>
+<br>
+
+<a href="#top"><button class="btn-1"><b>Back to top</b></button></a>
 
 </body>
 </div>
 
 <footer>
-This is not an offical site of Minecraft, nor is it affiliated with Mojang in any way. It is merely an example of an article redesign and should not be seen as an official source.
+This is not an offical site of Minecraft, nor is it affiliated with Mojang in any way.
 </footer>
 
 </html>

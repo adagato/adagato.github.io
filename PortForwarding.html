@@ -1,0 +1,84 @@
+<!doctype=html>
+<head>
+<title=PortForwarding></title>
+<link rel="stylesheet" href="InstructionsStyle.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+
+<div class="banner">
+	<div>
+		<h1>
+		Minecraft Server World
+		</h1>
+	</div>
+</div>
+
+<nav>
+<ol id="navlinks">
+	<li><a href="index.html">Server Setup Guide</a></li>
+	<li><a href="PortForwarding.html">Port Forwarding Tutorial</a></li>
+	<li><a href="Server Properties.html">Server Properties</a></li>	
+	<li><a href="Server Commands.html">Server Commands</a></li>
+	<li><a href="Contact.html">Contact</a></li>	
+</ol>
+</nav>
+
+
+<div class="background">
+<body>
+
+<p class="PageHeader"><b>Connecting Worldwide: Port Forwarding</b></p>
+
+<p class="TextHeader">
+<b>What Is a Minecraft Server?</b>
+</p>
+
+<p>Now that you have a working Minecraft server, you probably want to know how you can let your friends from across town or even around the globe connect and play together. To accomplish this, you'll need to port forward the server. Port forwarding is the process of opening up a hole in your network to allow others to connect to something that is being hosted there. It can be used for a variety of different services like website hosting, remote desktop connections, and most importantly in our case, a Minecraft server! Below, you'll see the process of port forwarding through one Internet Service Provider (ISP)'s router site, but note that each ISP will likely have a different layout than the one displayed here. The primary headings and routes to take to port forward will generally be the same, however. Lastly, note that port forwarding can only be performed if you have administrator access to your network. This means that you have access to the router your internet comes from, and you or someone you know is the owner of the network. 
+
+<ol>
+	<h2><li>Visiting Your Router's Website</h2>
+		<P>In order to allow people outside of your local network to connect to your Minecraft server, you'll need to port forward it. You can do this by visiting your router's website. Check the back of your router for a default gateway (It might look something like 192.168.0.1), and paste it into any browser. If asked for a username and password, check your router for a sticker with that information. While the specific layout of each internet provider's default gateway site may differ, each should have an area for port forwarding. Common headings to check under are headings like "Basic" or "Gaming".</p>
+		
+		<img class="image" src="isp website.gif"></img></li>
+		
+	<h2><li>Creating a New Port</h2>
+		<p>Once you find the section for port forwarding, create a new port. The default port for a Minecraft server is 25565, so that is the port that this guide will be using. Make the port follow TCP and UDP protocols, and set both public and private ports to 25565. When asked to enter your local IP, find it in a new command prompt window by typing "ipconfig". Your local IP address will be listed on the "IPv4 Address" line.</p> 
+		
+		<p class="Note"><b><i>Note: local IP addresses are private information and are a risk to the security of your network and computer if made public. As such, some obfuscations have been made in the below .gif to hide local addresses on the network.</i></b></p>
+		
+		<img class="image" src="port creation.gif"></img></li>
+		
+	<h2><li>Finding Your Public IP Address</h2>
+		<p>With the port forwarded, the next step is to find your public IP address. This address is what you will tell Minecraft to connect to, and will allow you to play on your server. To find your public IP address, type "what is my IP address" into the search engine of your choice. The number that appears will be your IP address.</p>
+		
+		<p class="Note"><b><i>Note: Take caution in who you share your public IP address with. Much like local IP's, giving your public IP out publicly is a security risk to your home network (albeit not as severe of a risk). Only give out your IP to people you would like to play with and trust. For additional server protection strategies, see the white-list property in the <a class="link" href="Server Properties.html">Server Properties page.</i></b></a></p>
+		
+		<img class="image" src="IP address.gif"></img></li>
+		
+	<h2><li>Connecting To Your Server</h2>
+		<p>Now that you have your public IP address, you have everything you need to connect to your server. Start Minecraft and go to the Multiplayer menu. There, click "Add Server". Type in the IP address that was found via the browser search, followed by the port (the default port for a Minecraft server is :25565) and click "Done". Then, find the new server in the window and click the play button. See this process in action by viewing the video below. Once you've loaded in, Congratulations! You've successfully created a minecraft server that your friends can join from anywhere, and you've learned some important coding and web skills along the way!</p>
+		
+		<video class="video" src="server.mp4" controls loop autoplay></video></li>
+
+<p>Congratulations! After a successful port forward, your friends from around the globe will be able to connect to your server! Visit our <a class="link" href="Server Properties.html">Server Properties</i></b></a> page to see how you can optimize your server for your friends, or visit our <a class="link" href="Server Properties.html">Server Commands</i></b></a> page to learn how to edit the game experience while playing. If you have questions, reach out to us using the info on our <a class="link" href="Server Properties.html">Getting in Contact</i></b></a> page!
+</p> 
+
+<p class="TextHeader">
+<b>Other Pages</b>
+</p>
+<p><a class="link" href="index.html">How to Setup a Minecraft Server</a></p>
+<p><a class="link" href="Server Properties.html">Modifying Your World: Server Properties</a></p>
+<p><a class="link" href="Server Commands.html">Changing the Game: Server Commands</a></p>
+<p><a class="link" href="Contact.html">Getting in Contact</a></p>
+
+<a href="#top"><button class="btn-1"><b>Back to top</b></button></a>
+
+</body>
+</div>
+
+<footer>
+This is not an offical site of Minecraft, nor is it affiliated with Mojang in any way.
+</footer>
+
+</html>
