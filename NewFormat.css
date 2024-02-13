@@ -185,7 +185,8 @@ h2	{
 
 .table1 th{
 	border: 1px solid;
-	border-color: #07e6bd;
+	color: #fa91ff;
+	border-color: #fa91ff;
 	border-radius: 8px 8px 8px 8px;
 }
 
